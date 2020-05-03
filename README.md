@@ -30,9 +30,13 @@ Tauste Campo A, Vázquez Y, Álvarez M, Zainos A, Rossi-Pool R, Deco G, Romo R. 
 
 ## Copyright
 Copyright (C) 2020, Manel Vila-Vidal, for the translation from Matlab to Python
+
 Contact details: m@vila-vidal.com
+
 Copyright (C) 2019, Adria Tauste Campo, for the original Matlab code (https://github.com/AdTau/DI-Inference)
+
 Contact details: adria.tauste@gmail.com
+
 Copyright (C) 2019, Jiantao Jiao, for the CTW_code in Matlab (https://github.com/EEthinker/Universal_directed_information)
 
 
