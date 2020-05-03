@@ -1,8 +1,11 @@
-Copyright (C) 2020, Manel Vila-Vidal, for the translation from Matlab to Python (https://github.com/mvilavidal/DI-Inference).
+Copyright (C) 2020, Manel Vila-Vidal, for the translation from Matlab
+to Python (https://github.com/mvilavidal/DI-Inference).
 Contact details: m@vila-vidal.com
-Copyright (C) 2019, Adria Tauste Campo, for the original Matlab code (https://github.com/AdTau/DI-Inference).
+Copyright (C) 2019, Adria Tauste Campo, for the original Matlab code
+(https://github.com/AdTau/DI-Inference).
 Contact details: adria.tauste@gmail.com
-Copyright (C) 2019, Jiantao Jiao, for the CTW_code in Matlab (https://github.com/EEthinker/Universal_directed_information).
+Copyright (C) 2019, Jiantao Jiao, for the CTW_code in Matlab
+(https://github.com/EEthinker/Universal_directed_information).
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the GNU General Public License v2.0 as published by
