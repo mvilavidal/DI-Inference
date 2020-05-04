@@ -42,8 +42,8 @@ def DI_significance_test(DI_ORIGINAL_MAT, DI_SURROGATES_MAT, delay_step,num_surs
     """ 
      
     # Construct the original value of T for each trial and interval
-    T=DI_ORIGINAL_MAT.argmax(axis=-1)
-    ind_delays=DI_ORIGINAL_MAT.max(axis=-1)
+    T=DI_ORIGINAL_MAT.max(axis=-1)
+    ind_delays=DI_ORIGINAL_MAT.argmax(axis=-1)
     
     # convert indeces into delays/lags (accounting for zero delay/lags).
     DELAY_MAT=delay_step*ind_delays

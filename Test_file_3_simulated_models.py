@@ -32,7 +32,7 @@ from DI_significance_test import DI_significance_test
 
 ## General parameters
 L=250 #Time series length
-model_num=1  #Number of model 1->Unidirectional
+model_num=3  #Number of model 1->Unidirectional
              #Number of model 2->Bidirectional
              #Number of model 3->No coupling
    

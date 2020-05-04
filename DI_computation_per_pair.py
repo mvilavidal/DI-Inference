@@ -57,7 +57,7 @@ def DI_computation_per_pair(NODE_1_MAT,NODE_2_MAT,N,M,interval_width,interval_st
     # the whole interval lasts 250 time steps so here I chose 
     # to start the shifts at 0.2 of the whole time length
     if num_surs <= max_shift-min_shift:
-        sur_shifts=np.linspace(min_shift,max_shift,num_surs).astype(int)
+        sur_shifts=np.round(np.linspace(min_shift,max_shift,num_surs)).astype(int)
     else:
         msg = 'Number of surrogates exceeds maximum possible'
         raise Exception(msg)
@@ -83,8 +83,8 @@ def DI_computation_per_pair(NODE_1_MAT,NODE_2_MAT,N,M,interval_width,interval_st
     num_intervals=intervals.shape[0]
     
     # Initialize matrices
-    DI_ORIGINAL_MAT=np.zeros((num_trials,  num_intervals, num_delays))
-    DI_SURROGATES_MAT=np.zeros((num_trials, num_intervals, num_delays, num_surs))
+    DI_ORIGINAL_MAT=np.zeros((num_trials,  num_intervals, num_delays+1))
+    DI_SURROGATES_MAT=np.zeros((num_trials, num_intervals, num_delays+1, num_surs))
     
     
     # Trial Loop %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,7 +100,7 @@ def DI_computation_per_pair(NODE_1_MAT,NODE_2_MAT,N,M,interval_width,interval_st
             # Delay loop %%%%%%%%%%%%%%%%%%%
             cont_delay=0  
             
-            for delay in range(0,num_delays*delay_step,delay_step):
+            for delay in range(0,num_delays*delay_step+1,delay_step):
                 
                 # Truncate binary sequences to account for delays
                 ini_x=intervals[k]-interval_width

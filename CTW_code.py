@@ -79,8 +79,9 @@ def  compute_DI_M(X,Y,Nx,D,Dxy,alg,start_ratio,prob,flag):
         #temp_rev_DI=temp_MI
         temp_DI=np.zeros(px.shape[1])
         for iy in range(Nx):
-            ind = X[D:] + iy*Nx+range(0,py_x_xy.shape[0]-Nx**2+1,Nx**2)
-            temp_DI = temp_DI + py_x_xy[ind,:] * np.log2( py_x_xy[ind]/py[iy,:] )
+            ind = list(X[D:] + iy*Nx+range(0,py_x_xy.size-Nx**2+1,Nx**2))
+            aux=py_x_xy.transpose().flatten()
+            temp_DI = temp_DI + aux[ind] * np.log2( aux[ind]/py[iy,:] )
 
     
     elif alg=='E4':
